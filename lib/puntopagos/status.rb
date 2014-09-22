@@ -26,6 +26,10 @@ module PuntoPagos
       @@response['error']
     end
 
+    def response
+      @@response
+    end
+    
     private
 
     def create_message token, trx_id, amount, timestamp
